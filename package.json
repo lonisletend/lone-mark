@@ -1,0 +1,52 @@
+{
+  "name": "lone-mark",
+  "version": "0.1.0",
+  "private": false,
+  "main": "dist/lone-mark.umd.min.js",
+  "unpkg": "dist/lone-mark.umd.min.js",
+  "jsdelivr": "dist/lone-mark.umd.min.js",
+  "author": "lonisletend",
+  "license": "MIT",
+  "description": "A simple markdown render for Vue.js",
+  "files": [
+    "dist/*",
+    "src/*"
+  ],
+  "homepage": "https://github.com/lonisletend/lone-mark",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lonisletend/lone-mark"
+  },
+  "bugs": {
+    "url": "https://github.com/lonisletend/lone-mark/issues"
+  },
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build --target lib --name lone-mark src/main.js",
+    "lint": "vue-cli-service lint",
+    "prepublishOnly": "$npm_execpath build"
+  },
+  "dependencies": {
+    "highlight.js": "^11.2.0",
+    "marked": "^3.0.2",
+    "vue": "^2.6.11"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "~4.5.0",
+    "@vue/cli-plugin-eslint": "~4.5.0",
+    "@vue/cli-service": "~4.5.0",
+    "@vue/eslint-config-prettier": "^6.0.0",
+    "babel-eslint": "^10.1.0",
+    "eslint": "^6.7.2",
+    "eslint-plugin-prettier": "^3.3.1",
+    "eslint-plugin-vue": "^6.2.2",
+    "prettier": "^2.2.1",
+    "vue-template-compiler": "^2.6.11"
+  },
+  "keywords": [
+    "vue",
+    "vuejs",
+    "markdown",
+    "markdown render"
+  ]
+}
